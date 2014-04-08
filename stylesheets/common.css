@@ -162,9 +162,10 @@ header {
   border: 1px solid #c5c5c5;
   display: block;
   color: #494949;
-  -moz-box-shadow: 0 0 3px -1px #ccc;
-  -webkit-box-shadow: 0 0 3px -1px #ccc;
-  box-shadow: 0 0 3px -1px #ccc;
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
   min-height: 48px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
