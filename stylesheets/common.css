@@ -9,7 +9,6 @@ body {
 
 .top {
   width: 100%;
-  min-width: 980px;
   height: 5px;
   background: url("../images/top.png") top center no-repeat;
 }
@@ -17,6 +16,18 @@ body {
 h1 {
   font-size: 44px;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
 }
 
 h1 span {
@@ -54,18 +65,56 @@ a.dark:hover {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 300px;
+  }
+}
+
 header {
   padding: 43px 10px 10px;
 }
 
 .header-left {
-  width: 215px;
+  width: 25%;
   float: left;
 }
 
 .header-right {
-  width: 700px;
+  width: 75%;
   float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-left {
+    width: 35%;
+  }
+  .header-right {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-left {
+    width: 50%;
+  }
+  .header-right {
+    width: 50%;
+    text-align: right;
+  }
 }
 
 .logo {
@@ -74,6 +123,20 @@ header {
   width: 143px;
   height: 111px;
   display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-right, .header-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .header-left {
+    margin-bottom: 20px;
+  }
+  .logo {
+    margin: 0 auto;
+  }
 }
 
 .header-subtitle {
@@ -95,14 +158,27 @@ header {
   float: right;
 }
 
+@media only screen and (max-width: 1000px) {
+  .header-col-3 {
+    width: 192px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-col-1, .header-col-2, .header-col-3 {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .header-col-3 .counter:last-child {
   float: right;
 }
 
 .social-icon {
-  display: block;
-  float: left;
-  margin-right: 7px;
+  display: inline-block;
+  margin-right: 4px;
   width: 33px;
   height: 33px;
   background-position: 0 0;
@@ -151,9 +227,37 @@ header {
   line-height: 44px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .counter {
+    width: 89px;
+    height: 75px;
+    padding-top: 14px;
+  }
+  .counter span {
+    font-size: 39px;
+    line-height: 39px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .counter {
+    float: right;
+    margin: 10px 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-col-3 .counter, .header-col-3 .counter:last-child {
+    float: none;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
 .content {
   padding: 28px 0 30px;
 }
+
 
 .product {
   background-color: #fff;
@@ -193,12 +297,86 @@ header {
   vertical-align: top;
 }
 
+@media only screen and (max-width: 1000px) {
+  .product-right {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products-long .col1of2 {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .products-long .product {
+    background-position: 408px 9px;
+  }
+  
+  .product-right {
+    padding: 25px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product-info, .product-left, .product-right {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-right: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .product-left {
+    padding-bottom: 0;
+  }
+  .products-long .product {
+    background-position: 246px 9px;
+  }
+}
+
 .product.small {
   padding:  14px 25px 18px;
   min-height: 170px;
   margin-bottom: 20px;
   background-position: 190px 9px;
   position: relative
+}
+
+@media only screen and (max-width: 1000px) {
+  .product.small {
+    padding: 10px 15px;
+    min-height: 190px;
+    background-position: 120px 9px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products .col1of4 {
+    width: 50%;
+  }
+  .product.small {
+    padding:  14px 25px 18px;
+    min-height: 190px;
+    background-position: 174px 9px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .products .col1of4 {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .product.small {
+    padding:  14px 25px 18px;
+    min-height: 160px;
+    background-position: 244px 9px;
+  }
 }
 
 .product:hover .forked p {
@@ -223,6 +401,25 @@ header {
   background: #5e5657 url("../images/forked.png") left center no-repeat;
   padding: 7px 25px;
   color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product .forked {
+    width: 105px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product .forked {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product .forked {
+    width: 230px;
+  }
 }
 
 .prm > .product .forked, .plm > .product .forked {
@@ -283,6 +480,20 @@ header {
   word-break: normal;
 }
 
+@media only screen and (max-width: 1000px) {
+  .product .title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product .title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
 .right-bordered {
   border-right: 1px solid #c5c5c5;
 }
@@ -301,6 +512,36 @@ header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .col1of6, .footer .col5of6 {
+    float: none;
+    width: 100%;
+  }
+  .footer .col1of6 {
+    margin-bottom: 30px;
+  }
+  .footer .col1of4 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer .col1of4 .plxl {
+    padding-left: 0;
+  }
+  .footer .col1of4:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer .col1of5, .footer .col4of5 {
+    width: 100%;
+    float none;
+  }
+  .footer .col4of5 .pls {
+    padding-left: 0;
+  }
 }
 
 .footer a {
