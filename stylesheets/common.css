@@ -279,6 +279,7 @@ header {
 .product-info {
   display: table;
   width: 100%;
+  min-height: 94px;
 }
 
 .product-left {
@@ -310,11 +311,11 @@ header {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   .products-long .product {
     background-position: 408px 9px;
   }
-  
+
   .product-right {
     padding: 25px;
     font-size: 16px;
@@ -567,7 +568,7 @@ header {
 .footer h3.colored {
   border-bottom-color: #edc406
 }
-      
+
 .footer .copyright {
   border-top: 1px solid #6f6969;
   font-size: 10px;
@@ -587,7 +588,7 @@ header {
   background: url("../images/footer-logo.png");
   text-indent: -9999px;
 }
-  
+
 .footer .footer-logo:hover {
   text-decoration: none;
 }
@@ -595,7 +596,7 @@ header {
 .footer li {
   margin-bottom: 3px;
 }
-    
+
 .github-link, .twitter-link, .facebok-link, .vimeo-link, .flickr-link, .email-link, .skype-link {
   display: inline-block;
   width: 30px;
@@ -605,25 +606,25 @@ header {
 .footer-social-link:hover {
   background-position: 0 -30px;
 }
-  
+
 
 .github-link {
   background: url("../images/icons/github-link.png");
 }
- 
+
 
 .twitter-link {
   background: url("../images/icons/twitter-link.png");
-}  
+}
 
 .facebok-link {
   background: url("../images/icons/facebook-link.png");
 }
-  
+
 .vimeo-link {
   background: url("../images/icons/vimeo-link.png");
 }
-  
+
 .flickr-link {
   background: url("../images/icons/flickr-link.png");
 }
