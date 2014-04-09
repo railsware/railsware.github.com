@@ -266,10 +266,10 @@ header {
   border: 1px solid #c5c5c5;
   display: block;
   color: #494949;
-  transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
+  transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
   min-height: 48px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
