@@ -487,6 +487,14 @@ header {
     font-size: 12px;
     line-height: 15px;
   }
+  
+  .footer .col1of6 {
+      width: 20%;
+    }
+  .footer .col5of6 {
+    width: 80%;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -581,16 +589,12 @@ header {
 .footer .footer-logo {
   display: inline-block;
   overflow: hidden;
-  width: 147px;
-  height: 36px;
+  width: 108px;
+  height: 105px;
   margin-top: 12px;
   float: left;
   background: url("../images/footer-logo.png");
   text-indent: -9999px;
-}
-
-.footer .footer-logo:hover {
-  text-decoration: none;
 }
 
 .footer li {
